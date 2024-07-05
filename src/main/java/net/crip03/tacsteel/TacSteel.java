@@ -1,6 +1,7 @@
 package net.crip03.tacsteel;
 
 import com.mojang.logging.LogUtils;
+import net.crip03.tacsteel.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,8 @@ public class TacSteel
     public TacSteel() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
 
@@ -47,7 +50,9 @@ public class TacSteel
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.ARMOR_PLATE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
