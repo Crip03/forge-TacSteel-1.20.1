@@ -13,8 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ARMOR_PLATE = ITEMS.register("armor_plate",
             () -> new Item(new Item.Properties()));
-
-
+    public static final RegistryObject<Item> HOLSTER = ITEMS.register("holster",
+            () -> new Item(new Item.Properties().defaultDurability(5000).stacksTo(1).));
 
 
 
