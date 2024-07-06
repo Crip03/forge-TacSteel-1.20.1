@@ -1,6 +1,7 @@
 package net.crip03.tacsteel;
 
 import com.mojang.logging.LogUtils;
+import net.crip03.tacsteel.item.ModCreativeModTabs;
 import net.crip03.tacsteel.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +30,8 @@ public class TacSteel
     public TacSteel() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -52,6 +55,7 @@ public class TacSteel
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.ARMOR_PLATE);
+            event.accept(ModItems.HOLSTER);
         }
     }
 
