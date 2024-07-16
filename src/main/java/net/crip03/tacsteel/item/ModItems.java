@@ -1,6 +1,7 @@
 package net.crip03.tacsteel.item;
 
 import net.crip03.tacsteel.TacSteel;
+import net.crip03.tacsteel.item.custom.armor_platArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,9 +15,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TacSteel.MOD_ID);
 
     public static final RegistryObject<Item> ARMOR_PLATE = ITEMS.register("armor_plate",
-            () -> new ArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new armor_platArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> HOLSTER = ITEMS.register("holster",
-            () -> new ArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new armor_platArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
 
 
