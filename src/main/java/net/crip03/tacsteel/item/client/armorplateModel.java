@@ -21,3 +21,5 @@ public class armorplateModel extends GeoModel<ArmorPlateArmorItem> {
         return new ResourceLocation(TacSteel.MOD_ID, "animations/armor_plate.animation.json");
     }
 }
+
+

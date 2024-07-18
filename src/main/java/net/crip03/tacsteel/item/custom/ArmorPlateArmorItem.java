@@ -17,6 +17,7 @@ import software.bernie.geckolib.core.object.PlayState;
 
 import java.util.function.Consumer;
 
+
 public class ArmorPlateArmorItem extends ArmorItem implements GeoItem {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
@@ -45,12 +46,12 @@ public class ArmorPlateArmorItem extends ArmorItem implements GeoItem {
     private PlayState predicate(AnimationState animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
-   }
+    }
 
-   @Override
-   public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         controllerRegistrar.add(new AnimationController(this, "controller", 0, this::predicate));
-   }
+    }
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
