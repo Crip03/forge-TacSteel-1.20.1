@@ -2,6 +2,7 @@ package net.crip03.tacsteel.item;
 
 import net.crip03.tacsteel.TacSteel;
 import net.crip03.tacsteel.item.custom.ArmorPlateArmorItem;
+import net.crip03.tacsteel.item.custom.CondorMOPCUGArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,8 @@ public class ModItems {
             () -> new ArmorPlateArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> HOLSTER = ITEMS.register("holster",
             () -> new ArmorPlateArmorItem(ModArmorMaterials.PLATE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> CONDOR_MOPC_UG = ITEMS.register("condor_mopc_ug",
+            () -> new CondorMOPCUGArmorItem(ModArmorMaterials.CONDOR1, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
 
 

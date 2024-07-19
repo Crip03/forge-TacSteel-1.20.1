@@ -1,6 +1,7 @@
 package net.crip03.tacsteel.item;
 
 import net.crip03.tacsteel.TacSteel;
+import net.crip03.tacsteel.item.custom.CondorMOPCUGArmorItem;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
@@ -10,7 +11,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     PLATE("armor_plate", 26, new int[]{ 10, 20, 15, 12 }, 25,
-            SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 1f, () -> Ingredient.of(Items.IRON_INGOT));
+            SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 1f, () -> Ingredient.of(Items.IRON_INGOT)),
+
+    CONDOR1("condor_mopc_ug", 32, new int[]{ 10, 20, 15, 8}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(Items.IRON_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;
@@ -74,3 +78,5 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return this.knockbackResistance;
     }
 }
+
+

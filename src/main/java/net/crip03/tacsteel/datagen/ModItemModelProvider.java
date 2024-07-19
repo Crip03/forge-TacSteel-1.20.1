@@ -20,7 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ARMOR_PLATE);
         simpleItem(ModItems.HOLSTER);
-
+        simpleItem(ModItems.CONDOR_MOPC_UG);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
