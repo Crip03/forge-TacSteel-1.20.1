@@ -14,6 +14,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 1f, () -> Ingredient.of(Items.IRON_INGOT)),
 
     CONDOR1("condor_mopc_ug", 32, new int[]{ 10, 20, 15, 8}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(Items.IRON_INGOT)),
+    PHP_B("php_b", 32, new int[]{ 10, 20, 15, 8}, 25,
             SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(Items.IRON_INGOT));
 
     private final String name;

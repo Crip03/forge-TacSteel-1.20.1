@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ARMOR_PLATE.get());
                         output.accept(ModItems.HOLSTER.get());
                         output.accept(ModItems.CONDOR_MOPC_UG.get());
+                        output.accept(ModItems.);
                     })
                     .build());
 
