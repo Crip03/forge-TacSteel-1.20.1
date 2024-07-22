@@ -1,0 +1,21 @@
+"type": "minecraft:crafting_shaped",
+"category": "misc",
+"pattern": [
+"DLD",
+"IDI",
+"D D"
+],
+"key": {
+"D": {
+"item": "minecraft:dried_kelp"
+},
+"L": {
+"item": "minecraft:leather"
+},
+"I": {
+"item": "minecraft:iron_ingot"
+},
+"result": {
+"item": "tacsteel:php_b"
+}
+}
