@@ -8,16 +8,16 @@ import software.bernie.geckolib.model.GeoModel;
 public class PHP_BModel extends GeoModel<PHP_BArmorItem> {
     @Override
     public ResourceLocation getModelResource(PHP_BArmorItem php_bArmorItem) {
-        return new ResourceLocation(TacSteel.MOD_ID, "geo/PHP_B.geo.json");
+        return new ResourceLocation(TacSteel.MOD_ID, "geo/php_b.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(PHP_BArmorItem php_bArmorItem) {
-        return new ResourceLocation(TacSteel.MOD_ID, "textures/armor/PHP_B.png");
+        return new ResourceLocation(TacSteel.MOD_ID, "textures/armor/php_b.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(PHP_BArmorItem php_bArmorItem) {
-        return new ResourceLocation(TacSteel.MOD_ID, "animations/PHP_B.animation.json");
+        return new ResourceLocation(TacSteel.MOD_ID, "animations/php_b.animation.json");
     }
 }
